@@ -1,0 +1,57 @@
+## 📁 Project Structure
+
+The project follows a **full stack architecture** with separate frontend and backend directories.
+
+```
+smartresumebuilder/
+│
+├── backend/
+│   ├── middleware/        # Custom middleware (auth, error handling)
+│   ├── models/            # Mongoose schemas (User, Resume, Job)
+│   ├── routes/            # API route definitions
+│   ├── node_modules/      # Backend dependencies
+│   ├── .env               # Environment variables
+│   ├── server.js          # Entry point of backend server
+│   ├── package.json       # Backend dependencies & scripts
+│
+├── frontend/
+│   ├── public/            # Static assets
+│   ├── src/               # React source code
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/         # Application pages (Login, Dashboard, etc.)
+│   │   ├── context/       # Global state management (Context API)
+│   │   ├── hooks/         # Custom React hooks
+│   │   ├── services/      # API calls and utilities
+│   ├── node_modules/      # Frontend dependencies
+│   ├── index.html         # Main HTML file
+│   ├── package.json       # Frontend dependencies & scripts
+│   ├── vite.config.js     # Vite configuration
+│   ├── tailwind.config.js # Tailwind CSS configuration
+│   ├── postcss.config.js  # PostCSS configuration
+│   ├── eslint.config.js   # Linting configuration
+│   ├── .gitignore         # Ignored files
+│   ├── README.md          # Frontend documentation
+│
+├── package-lock.json      # Root dependency lock file (if any)
+│
+└── README.md              # Main project documentation
+```
+
+---
+
+## 🧩 Architecture Overview
+
+* **Frontend**: Built using React + Tailwind CSS for a responsive and modern UI
+* **Backend**: Node.js + Express.js for handling APIs and business logic
+* **Database**: MongoDB for storing users, resumes, and job data
+
+---
+
+## 🔄 Data Flow
+
+1. User interacts with the frontend (React UI)
+2. Frontend sends API requests to backend (Express)
+3. Backend processes logic and interacts with MongoDB
+4. Response is sent back and displayed in UI
+
+---
